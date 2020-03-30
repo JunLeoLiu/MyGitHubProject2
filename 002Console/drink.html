@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font-size:50px;
+        }
+    </style>
+    <script src="js/IntFunc.js"></script>
+    <script>
+        var price=10,count;
+        count=prompt("how many?");
+        if(isInt(count)){
+            if(count%2==0){
+                totalprice=count*price;
+            }
+            else{
+                totalprice =count*price-5*count;
+            }
+            document.write("total price is "+totalprice);
+        }
+        else{
+            document.write("pls input an integer");
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

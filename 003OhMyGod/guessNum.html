@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font-size:200px;
+        }
+    </style>
+</head>
+<body>
+<div id="demo">make a guess</div>
+</body>
+</html>
+<script>
+    var r=false;
+    function guess(){
+        if(r){
+            return;
+        }
+        var guess=prompt("make a guess");
+        if(guess==a){
+            document.getElementById("demo").innerHTML="Right!!!";
+            document.write("\r" +"<img src=\"images/"+a+".PNG\"/>");
+            r=true;
+        }
+        else{
+            document.getElementById("demo").innerHTML="WRONG!!";
+        }
+    }
+    var a = Math.random()
+    a=Math.floor(a*6)+1
+    console.info(a);
+    //document.write(a);
+    //document.write("<img src=\"images/"+a+".PNG\"/>");
+    guess();
+    guess();
+    guess();
+</script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font-size:200px;
+        }
+    </style>
+</head>
+<body>
+<div id="demo">make a guess</div>
+</body>
+</html>
+<script>
+    var r=false,a = Math.random(),guess;
+    function Mguess(){
+        if(r){
+            return;
+        }
+        guess = Number(prompt("make a guess"));
+        if(!Number.isInteger(guess)||guess>6||guess<1){
+            document.getElementById("demo").innerHTML="Illegal input!!!";
+            return;
+        }
+        console.info("random=" + a);
+        console.info("guess=" + guess);
+        var diff = Math.abs(a-guess);
+        console.info("Gap ="+diff);
+
+        if(guess==a){
+            document.getElementById("demo").innerHTML="Right!!!" +"<img src=\"images/"+a+".PNG\"/>";
+            r=true;
+        }
+        else{
+            document.getElementById("demo").innerHTML="WRONG!!";
+        }
+    }
+
+    a=Math.floor(a*6)+1;
+    console.info(a);
+    //document.write(a);
+    //document.write("<img src=\"images/"+a+".PNG\"/>");
+    Mguess();
+    Mguess();
+    Mguess();
+</script>

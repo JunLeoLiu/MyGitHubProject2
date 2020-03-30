@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #x1{
+            font-size:30px;
+        }
+        #x2{
+            font-size:30px;
+        }
+        #imgy{
+            height:400px;
+            width:400px;
+            background-image: url("images/logo.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div id="x1" onclick="y1()">x1</div>
+    <div id="x2" onclick="y2()">x2</div>
+    <div id="imgy"></div>
+    <script>
+        function y1(){
+            document.getElementById("imgy").style.backgroudImage= "url('images/QR.jpg')";
+            alert();
+        }
+        function y2(){
+            document.getElementById("imgy").style.backgroudImage= "url('images/x.PNG')";
+            alert();
+        }
+    </script>
+</body>
+</html>

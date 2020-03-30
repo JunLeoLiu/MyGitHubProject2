@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test3</title>
+    <style>
+        html,body{
+            height:100%;
+            font-size:300px;
+            text-align:center;
+        }
+    </style>
+    <script>
+        var Num=1;
+        function gogogo(){
+            if(Num%10==0){
+                document.body.innerHTML=Num + "<br/>Pass";
+            }
+            else{
+                document.body.innerHTML=Num;
+            }
+            Num += 1;
+        }
+    </script>
+</head>
+<body onclick="gogogo()">
+0
+</body>
+</html>

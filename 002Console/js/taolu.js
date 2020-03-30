@@ -1,0 +1,3 @@
+function taolu(){
+    alert(Date())
+}

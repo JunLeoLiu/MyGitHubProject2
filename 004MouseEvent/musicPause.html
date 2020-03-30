@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #myMusicButton{
+            height:800px;
+            width:450px;
+            background-image: url("images/x.PNG");
+        }
+    </style>
+</head>
+<body>
+<audio id="myMusic" src="audio/1.mp3" preload="auto" autoplay="autoplay" loop="loop"></audio>
+<div id="myMusicButton" onclick="control()">
+    test
+</div>
+</body>
+<script>
+    var Pl = true;
+    function control(){
+        var myMusicButton = document.getElementById("myMusicButton")
+        if(Pl){
+            document.getElementById("myMusic").pause();
+                myMusicButton.style.backgroundImage="url('images/QR.jpg')";
+                myMusicButton.style.height='400px';
+                myMusicButton.style.width='400px';
+            Pl=!Pl;
+        }
+        else {
+            document.getElementById("myMusic").play();
+            myMusicButton.style.backgroundImage="url('images/logo.jpg')";
+            myMusicButton.style.height='400px';
+            myMusicButton.style.width='400px';
+            Pl=!Pl;
+        }
+
+    }
+</script>
+</html>
